@@ -1,38 +1,66 @@
-# vue-music
+# Arway 's Music
+> 这是一款基于vue.js开发的音乐播放器
 
-> Vue.js 高级实战——音乐 App 课程源码，课程地址： http://coding.imooc.com/class/107.html
+### 技术栈
 
-本源码非开源项目，仅仅用于 Vue 实战项目的学习，不可作为商业用途。
-希望同学们一起努力抵制盗版侵权行为，尽量不要把这个项目开源。
+> vue.js
 
-最新的代码在 master，另外 `use-cube-ui` 分支是使用 cube-ui 对该项目做的重构，代码也会同步更新。遇到问题请先查看 issue，并且对比最新的源码，因为你遇到的大部分问题都可以在 issue 里看到，并且最新源码也都解决这些问题。
+---
 
-老师基于这个项目写过 2 篇文章，感兴趣的同学也可以看看。
+### 功能介绍
 
-- [Vue.js 升级踩坑小记](https://juejin.im/post/5a1af88f5188254a701ec230)
+- 推荐页面 
+>采用轮播图的方式来展示当前热门歌曲和个人歌单
 
-解决 iOS 微信不能播放歌曲的问题。
+ ![](http://oz8x9vozq.bkt.clouddn.com/%E6%8E%A8%E8%8D%90.jpg)
+- 歌手页面
+>展示歌手和歌手详情页面
 
-- [vue-music 音乐 App 之 cube-ui 重构](https://juejin.im/post/5a524117518825732c535fff)
+ ![](http://oz8x9vozq.bkt.clouddn.com/%E6%AD%8C%E6%89%8B%E9%A1%B5%E9%9D%A2.png)
+ ![](http://oz8x9vozq.bkt.clouddn.com/%E6%AD%8C%E6%89%8B%E8%AF%A6%E6%83%85%E9%A1%B5.png)
+- 排行榜页面
+> 展示当前各个系列热门歌曲榜单
 
-使用 cube-ui 重构该项目。
+ ![](http://oz8x9vozq.bkt.clouddn.com/%E6%8E%92%E8%A1%8C.png)
+ ![](http://oz8x9vozq.bkt.clouddn.com/%E6%8E%92%E8%A1%8C%E8%AF%A6%E6%83%85.png)
+- 个人中心页面
+> 展示自己听歌历史记录以及喜欢的歌曲
 
-[项目演示地址](http://ustbhuangyi.com/music/)
+ ![](http://oz8x9vozq.bkt.clouddn.com/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83.png)
+- 搜索页面
+> 可以搜索歌曲，添加歌曲到播放列表
 
-![二维码](http://qr.api.cli.im/qr?data=http%253A%252F%252Fustbhuangyi.com%252Fmusic&level=H&transparent=false&bgcolor=%23ffffff&forecolor=%23000000&blockpixel=12&marginblock=1&logourl=&size=280&kid=cliim&key=ab1f62311bfc4de5bc301283707c0328)
+ ![](http://oz8x9vozq.bkt.clouddn.com/%E6%90%9C%E7%B4%A2%E7%95%8C%E9%9D%A2.gif)
+- 播放器页面
+> 完成播放的上一首，下一首，播放模式，选择喜欢的歌曲
 
-## 你可以学到什么
-我们可以通过一张图来认识一下本课程的知识结构
+ ![](http://oz8x9vozq.bkt.clouddn.com/sx.gif)
+ ![](http://oz8x9vozq.bkt.clouddn.com/l.gif)
+> 播放器界面与歌词界面的切换
 
-![vue-sell](https://static.galileo.xiaojukeji.com/static/tms/shield/Vue.js_music_xmind.png)
+ ![](http://oz8x9vozq.bkt.clouddn.com/lyric.gif)
+> 在播放列表界面往播放列表里面添加歌曲
 
-## 适合人群
-适合有一定 Vue.js 和前端基础知识并且想在 Vue.js 方向进阶同学。
+ ![](http://oz8x9vozq.bkt.clouddn.com/%E6%92%AD%E6%94%BE%E5%88%97%E8%A1%A8%E6%B7%BB%E5%8A%A0%E6%AD%8C%E6%9B%B2.gif)
 
-## 源码结构
+---
 
-每一章节都有独立的分支代码，建议同学们在学习的时候跟着视频手写 JS 部分代码，CSS 部分可以从源码中获取，但是一定要过一遍，确保自己理解。
+### 项目使用流程
 
-## Bug 修复
+1. 克隆源代码
+> git clone git@github.com:ArwayQu/aWsMusic.git
+2. 安装项目开发依赖
+> npm install
+3. 编译源代码
+> npm run dev
 
-由于项目有一定复杂度，所以难免会有 bug，同学们在发现有 bug 的话可以通过 issue 的方式提问，我都会解决。当然更欢迎同学们可以提供 pull request，一起帮助完善这个项目。
+---
+
+### 项目扩展
+
+- 项目中组件中数据传输全部依赖于Vuex，包括三种播放模式的播放列表，喜欢的歌曲都有其自己的state
+
+- 歌单，歌手，搜索数据全部来源于QQ音乐
+
+- 项目中所用到的轮播，滚动等均来自于[better-scroll](https://ustbhuangyi.github.io/better-scroll/doc/)，有兴趣的同学可以学习一下文档，对以后的开发会有很大的帮助
+
