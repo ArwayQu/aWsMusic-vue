@@ -48,7 +48,7 @@
 ### 项目使用流程
 
 1. 克隆源代码
-> git clone git@github.com:ArwayQu/aWsMusic.git
+> git clone git@github.com:ArwayQu/aWsMusic-vue.git
 2. 安装项目开发依赖
 > npm install
 3. 编译源代码
